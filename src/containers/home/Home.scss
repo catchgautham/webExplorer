@@ -1,0 +1,38 @@
+.layout {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .outer {
+    background-color: rgb(214, 214, 214);
+    padding: 2rem;
+    display: flex;
+    width: 20rem;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0.5rem;
+    .field-padding {
+      padding: 1rem;
+      border-radius: 0.5rem;
+      #outlined-basic {
+        background-color: white;
+        border-radius: 0.5rem;
+        height: 1rem;
+        width: 15rem;
+      }
+      #outlined-password-input {
+        background-color: white;
+        border-radius: 0.5rem;
+        height: 1rem;
+        width: 15rem;
+      }
+      #outlined-login-button {
+        background-color: white;
+        border-radius: 0.5rem;
+        height: 3rem;
+        width: 17rem;
+      }
+    }
+  }
+}

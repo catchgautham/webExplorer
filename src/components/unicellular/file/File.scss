@@ -1,0 +1,42 @@
+@import "../../../styles/fonts.scss";
+@import "../../../styles/colors.scss";
+
+.file-outer {
+  font-family: $font_tnr;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  caret-color: transparent;
+  align-items: center;
+  justify-items: flex-end;
+  padding: 0.25rem;
+  border: solid 0.1rem transparent;
+  .file-icon {
+    width: 3rem;
+    height: 2rem;
+    // background-image: url("../../../assets/images/file_win7.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .file-details {
+    display: flex;
+    flex-direction: column;
+    .file-name {
+      font-size: 1rem;
+      text-align: left;
+      display: block;
+      width: 7rem;
+      padding: 0 0 0 0.5rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+  &:hover {
+    background-color: $folder-hover;
+    border: solid 0.1rem $folder-hover-border;
+    cursor: pointer;
+  }
+}
